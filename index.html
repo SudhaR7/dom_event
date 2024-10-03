@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/style.css">
+    <title>ToDo-JS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="centered_element">
+            <input type="text" placeholder="Add a new Task" id="newTask" required>
+            <button onclick="addTask()" id="add">ADD</button>
+            <!--<p id="newText"></p>-->
+            <div id="taskList"></div>
+        </div>
+    </div>
+       <script>    
+        function addTask()
+        {
+            const listTask = document.createElement("p"); // Each task as a new <p> element
+            listTask.textContent = "Task Added";
+            document.getElementById("taskList").appendChild(listTask);
+            const hr = document.createElement("hr");
+            taskList.appendChild(hr);
+            document.getElementById("newTask").value = ""; 
+            /*const listTask=document.createElement("p");
+            listTask.textContent="Task Added";
+            document.body.appendChild(listTask);      */          
+        }
+    </script>
+</body>
+</html>
